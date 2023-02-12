@@ -1,0 +1,36 @@
+{
+  "name": "Vishwas's-Homepage",
+  "version": "1.0.0",
+  "description": "Vishwas Saini's website",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start",
+    "prettier": "prettier --write .",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "Vishwas Saini",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/icons": "^1.1.7",
+    "@chakra-ui/react": "^1.8.8",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "framer-motion": "^6.3.0",
+    "next": "^12.1.5",
+    "react": "^17.0.2",
+    "react-carousel3": "^1.0.0",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-multi-carousel": "^2.8.2",
+    "react-pdf": "^5.7.2",
+    "three": "^0.139.2",
+    "vue-carousel-3d": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-next": "^12.1.5",
+    "prettier": "^2.6.2"
+  }
+}
