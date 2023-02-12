@@ -20,7 +20,6 @@ import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Image from 'next/image'
-import { Carousel3d, Slide } from 'vue-carousel-3d'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -162,15 +161,37 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           What i know?
         </Heading>
-        <carousel-3d>
-        <slide :index="1">
-      Slide 2 Content
-    </slide>
-
-        </carousel-3d>
-      </Section>
-
-      <Section delay={0.3}>
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          slidesToSlide={2}
+          infinite={true}
+          autoPlaySpeed={1000}
+          keyBoardControl={false}
+          customTransition="all .5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={['tablet', 'mobile']}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          <img
+            width="50%"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+          />
+          <img
+            width="50%"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+          />
+          <img
+            width="100%"
+            src="https://zeevector.com/wp-content/uploads/IBM-Watson-Logo-PNG@zeevector.png "
+          />
+          <div>Item 4</div>
+        </Carousel>
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>
