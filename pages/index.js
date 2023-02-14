@@ -33,11 +33,11 @@ const responsive = {
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3
+    items: 4
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2
+    items: 5
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -159,11 +159,10 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          What i know?
+          My ⭐ Skills
         </Heading>
         <Carousel
           swipeable={false}
-          draggable={false}
           showDots={true}
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.
@@ -176,7 +175,8 @@ const Home = () => (
           containerClass="carousel-container"
           removeArrowOnDeviceType={['tablet', 'mobile']}
           dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
+          itemClass="carousel"
+          arrows={false}
         >
           <img
             width="50%"
@@ -187,29 +187,32 @@ const Home = () => (
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
           />
           <img
-            width="100%"
-            src="https://zeevector.com/wp-content/uploads/IBM-Watson-Logo-PNG@zeevector.png "
+            width="80%"
+            src="https://zeevector.com/wp-content/uploads/IBM-Watson-Logo-PNG@zeevector.png"
           />
-          <div>Item 4</div>
+          <img
+            width="50%"
+            src="https://logodownload.org/wp-content/uploads/2022/04/javascript-logo-4.png"
+          />
         </Carousel>
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/Vishwas-10" target="_blank">
+            <Link href="https://github.com/G-SF" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @Vishwas-10
+                @G-SF
               </Button>
             </Link>
           </ListItem>
           <ListItem>
             <Link
-              href="https://www.linkedin.com/in/vishwas-saini-384212218/"
+              href="https://www.linkedin.com/in/gabriel-smangorzewski-0a93b9141/"
               target="_blank"
             >
               <Button
@@ -217,18 +220,18 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoLinkedin />}
               >
-                @Vishwas Saini
+                Gabriel Smangorzewski
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.instagram.com/vishwas10/" target="_blank">
+            <Link href="https://www.instagram.com/gaabreuz/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @Vishwas10
+                @Gaabreuz
               </Button>
             </Link>
           </ListItem>
