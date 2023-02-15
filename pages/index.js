@@ -9,7 +9,8 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  Image
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -19,9 +20,9 @@ import Section from '../components/section'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import Image from 'next/image'
+import ImageNext from 'next/image'
 
-const ProfileImage = chakra(Image, {
+const ProfileImage = chakra(ImageNext, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
@@ -187,13 +188,14 @@ const Home = () => (
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
           />
           <img
-            width="80%"
-            src="https://zeevector.com/wp-content/uploads/IBM-Watson-Logo-PNG@zeevector.png"
+            width="50%"
+            src="https://img.icons8.com/officexs/480/ibm-watson.png"
           />
           <img
             width="50%"
             src="https://logodownload.org/wp-content/uploads/2022/04/javascript-logo-4.png"
           />
+          <Image width="70%" src="/images/node.png" />
         </Carousel>
         <Heading as="h3" variant="section-title">
           On the web
@@ -206,7 +208,7 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @G-SF
+                G-SF
               </Button>
             </Link>
           </ListItem>
