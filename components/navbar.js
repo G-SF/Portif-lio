@@ -12,11 +12,18 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+  Button
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
+import { Sling as Hamburger } from 'hamburger-react'
+import { useState, setState } from 'react'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -38,13 +45,13 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 
 const Navbar = props => {
   const { path } = props
-
+  const [isOpen, setOpen] = useState(false)
   return (
     <Box
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
+      bg={useColorModeValue('#ffffff40', '#22223E')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={2}
       {...props}
@@ -57,11 +64,28 @@ const Navbar = props => {
         align="center"
         justify="space-between"
       >
-        <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-            <Logo />
-          </Heading>
-        </Flex>
+        <Menu>
+          <MenuButton
+            as={Button}
+            icon={
+              <Hamburger
+                toggled={isOpen}
+                toggle={setOpen}
+                easing="ease-in"
+                duration={0.8}
+              />
+            }
+          ></MenuButton>
+          <MenuList>
+            <MenuItem>
+              <Flex align="center" mr={5}>
+                <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+                  <Logo />
+                </Heading>
+              </Flex>
+            </MenuItem>
+          </MenuList>
+        </Menu>
 
         <Stack
           direction={{ base: 'column', md: 'row' }}

@@ -60,7 +60,7 @@ const Home = () => (
         Hello, I&apos;m a Web and AI Developer.
       </Box>
 
-      <Box display={{ md: 'flex' }}>
+      <Box display={{ md: 'flex' }} padding="1.0em">
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Gabriel Smangorzewski
@@ -84,7 +84,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/perfil.png"
+              src="/images/perfil2.png"
               alt="Profile image"
               borderRadius="full"
               width="100%"
@@ -95,20 +95,29 @@ const Home = () => (
       </Box>
 
       <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
-          About me
-        </Heading>
-        <Paragraph>
-          Hello! 👋 I am Gabriel Smangorzewski Floriano a 2rd year Big Data &
-          Analytic Intelligence undergrad at Pontifícia Universidade Católica do
-          Paraná. I Love talking and resolve complexing codes and problems
-          involving JavaScript, Python, React, and any other programming
-          language. (I Really love this.)
-          <br></br>
-          When I'm not coding, you'll find me watching movies, hanging and
-          playing out with my friends. I also love read science and A.I books.
-          (This is my second love.)
-        </Paragraph>
+        <Box
+          borderRadius="lg"
+          mb={6}
+          p={3}
+          textAlign="center"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          css={{ backdropFilter: 'blur(10px)' }}
+        >
+          <Heading as="h2" variant="section-title" margin="1.0rem">
+            About me
+          </Heading>
+          <Paragraph>
+            Hello! 👋 I am Gabriel Smangorzewski Floriano a 2rd year Big Data &
+            Analytic Intelligence undergrad at Pontifícia Universidade Católica
+            do Paraná. I Love talking and resolve complexing codes; problems
+            involving JavaScript, Python, React, and any other programming
+            language. (I Really love this.)
+            <br></br>
+            When I'm not coding, you'll find me watching movies, hanging and
+            playing out with my friends. I also love read science and A.I books.
+            (This is my second love.)
+          </Paragraph>
+        </Box>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -162,41 +171,54 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           My ⭐ Skills
         </Heading>
-        <Carousel
-          swipeable={false}
-          showDots={true}
-          responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
-          slidesToSlide={2}
-          infinite={true}
-          autoPlaySpeed={1000}
-          keyBoardControl={false}
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={['tablet', 'mobile']}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel"
-          arrows={false}
+        <Box
+          borderRadius="lg"
+          mb={6}
+          p={3}
+          textAlign="center"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          css={{ backdropFilter: 'blur(10px)' }}
         >
-          <img
-            width="50%"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
-          />
-          <img
-            width="50%"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-          />
-          <img
-            width="50%"
-            src="https://img.icons8.com/officexs/480/ibm-watson.png"
-          />
-          <img
-            width="50%"
-            src="https://logodownload.org/wp-content/uploads/2022/04/javascript-logo-4.png"
-          />
-          <Image width="70%" src="/images/node.png" />
-        </Carousel>
+          <Carousel
+            swipeable={true}
+            showDots={true}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            slidesToSlide={2}
+            infinite={true}
+            autoPlaySpeed={1000}
+            keyBoardControl={false}
+            customTransition="all .5"
+            transitionDuration={500}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={['tablet', 'mobile']}
+            dotListClass="custom-dot-list-style"
+            itemClass="carousel"
+            arrows={false}
+            renderDotsOutside={true}
+          >
+            <img
+              width="50%"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+            />
+            <img
+              width="50%"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+            />
+            <img
+              width="50%"
+              src="https://img.icons8.com/officexs/480/ibm-watson.png"
+            />
+            <img
+              width="50%"
+              src="https://logodownload.org/wp-content/uploads/2022/04/javascript-logo-4.png"
+            />
+            <Image
+              width="50%"
+              src="https://uipath.com/cdn-cgi/image/format=auto/https://marketplace-cdn.uipath.com/files/miscellaneous/9211979d-3415-43bc-bc56-fd2bb8a6c60a.png"
+            />
+          </Carousel>
+        </Box>
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>
