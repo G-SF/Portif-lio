@@ -16,8 +16,8 @@ const Main = ({ children, router }) => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Gabriel SF - homepage" />
-        <meta name="author" content="Vishwas Saini" />
-        <meta name="author" content="Vishwas Saini" />
+        <meta name="author" content="Gabriel SF" />
+        <meta name="author" content="Gabriel SF" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <title>Gabriel SF - Homepage</title>

@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbComs from '../public/images/works/Portal1.png'
+import thumbComs from '../public/images/works/Portal-home.png'
 import thumbadulting101 from '../public/images/works/adulting101-home.png'
 import thumbFakeFace from '../public/images/works/fakeface-home.png'
 import thumbHandGesture from '../public/images/works/handgesture-home.png'
