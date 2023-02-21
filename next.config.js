@@ -1,3 +1,4 @@
 module.exports = {
-  reactStrictMode: true
+  reactStrictMode: true,
+  NETLIFY_NEXT_PLUGIN_SKIP: true
 }
