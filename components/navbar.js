@@ -13,16 +13,11 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
   Button
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
-import { Sling as Hamburger } from 'hamburger-react'
 import { useState, setState } from 'react'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
@@ -65,26 +60,23 @@ const Navbar = props => {
         justify="space-between"
       >
         <Menu>
-          <MenuButton
-            as={Button}
-            icon={
-              <Hamburger
-                toggled={isOpen}
-                toggle={setOpen}
-                easing="ease-in"
-                duration={0.8}
-              />
-            }
-          ></MenuButton>
-          <MenuList>
-            <MenuItem>
-              <Flex align="center" mr={5}>
-                <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+          {({ isOpen }) => (
+            <>
+              <MenuButton isActive={isOpen} as={Button}>
+                {isOpen ? <CloseIcon /> : <HamburgerIcon />}
+              </MenuButton>
+              <MenuList>
+                <MenuItem>
                   <Logo />
-                </Heading>
-              </Flex>
-            </MenuItem>
-          </MenuList>
+                </MenuItem>
+                <MenuItem>
+                  <LinkItem href="/works" path={path}>
+                    Projects
+                  </LinkItem>
+                </MenuItem>
+              </MenuList>
+            </>
+          )}
         </Menu>
 
         <Stack

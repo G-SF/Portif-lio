@@ -13,29 +13,29 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Projects = () => (
-  <Layout title="Canteen Management System">
+  <Layout title="Enterprise Dashboard">
     <Container>
       <Title>
-      Canteen Management System <Badge>2021-</Badge>
+        Enterprise Dashboard <Badge>2022-</Badge>
       </Title>
       <P>
-      A webapp using LAMP stack, on which the canteen vendor can put up items and students can create account,
-order food in a hassle free manner.
+        A WebApp to monitor all aplications and integrations of the enterprise,
+        including operationals numbes and multiples visions. <p></p>This project
+        have integrations with the ApexCharts to have the best performance and
+        variation Charts.
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Github</Meta>
-          <Link href="https://github.com/Vishwas-10/Canteen-Order-Management-System">
-          Canteen-Order-Management-System<ExternalLinkIcon mx="2px" />
-          </Link>
+          <text style={{ color: 'red' }}>Private Code</text>
         </ListItem>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>Windows/macOS/Linux</span>
+          <span>Windows/macOS/Linux/SmartPhones</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>HTML,CSS,JavaScript,PHP,MySQL</span>
+          <span>React,Chakra UI,HTML,CSS,JavaScript</span>
         </ListItem>
       </List>
 
@@ -43,9 +43,9 @@ order food in a hassle free manner.
         <Center>Preview</Center>
       </Heading>
 
-      <WorkImage src="/images/works/coms-home.png" alt="COMS" />
-      <WorkImage src="/images/works/coms1.png" alt="COMS" />
-      <WorkImage src="/images/works/coms2.png" alt="COMS" />
+      <WorkImage src="/images/works/portal1.png" alt="COMS" />
+      <WorkImage src="/images/works/portal2.png" alt="COMS" />
+      <WorkImage src="/images/works/portal3.png" alt="COMS" />
     </Container>
   </Layout>
 )
