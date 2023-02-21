@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
+import { IoLogoGithub } from 'react-icons/io5'
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -8,7 +9,7 @@ const LogoBox = styled.span`
   display: inline-flex;
   align-items: center;
   height: 20px;
-  line-height: 10px;
+  line-height: 5px;
   padding: 23px;
 `
 
@@ -21,10 +22,11 @@ const Logo = () => {
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="bold"
-            ml={3}
+            ml={4}
           >
-            Gabriel SF
+            Home
           </Text>
+          <IoLogoGithub />
         </LogoBox>
       </a>
     </Link>

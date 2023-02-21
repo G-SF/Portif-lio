@@ -15,10 +15,15 @@ import {
   useColorModeValue,
   Button
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import { CloseIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
-import { useState, setState } from 'react'
+import {
+  IoMailUnreadOutline,
+  IoHome,
+  IoFolderOpen,
+  IoList
+} from 'react-icons/io5'
+import { useState } from 'react'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -26,10 +31,15 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   return (
     <NextLink href={href} passHref scroll={false}>
       <Link
+        borderRadius={10}
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
         target={target}
+        display="inline-flex"
+        alignItems="center"
+        style={{ gap: 4 }}
+        pl={2}
         {...props}
       >
         {children}
@@ -59,18 +69,22 @@ const Navbar = props => {
         align="center"
         justify="space-between"
       >
-        <Menu>
+        <Menu matchWidth={true} arrowPadding={5}>
           {({ isOpen }) => (
             <>
               <MenuButton isActive={isOpen} as={Button}>
-                {isOpen ? <CloseIcon /> : <HamburgerIcon />}
+                {isOpen ? <CloseIcon /> : <IoList />}
               </MenuButton>
               <MenuList>
                 <MenuItem>
-                  <Logo />
+                  <LinkItem href="/" path={path}>
+                    <IoHome />
+                    Portfolio
+                  </LinkItem>
                 </MenuItem>
                 <MenuItem>
                   <LinkItem href="/works" path={path}>
+                    <IoFolderOpen />
                     Projects
                   </LinkItem>
                 </MenuItem>
@@ -87,50 +101,22 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Projects
-          </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/Vishwas-10/Vishwas-s-Portfolio"
+            href="mailto:gabrielsmangor@gmail.com"
             path={path}
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
           >
-            <IoLogoGithub />
-            Source
+            <IoMailUnreadOutline />
+            Contact
           </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
           <ThemeToggleButton />
-
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu isLazy id="navbar-menu">
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
-              />
-              <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/Vishwas-10/Vishwas-s-Portfolio"
-                >
-                  View Source
-                </MenuItem>
-              </MenuList>
-            </Menu>
-          </Box>
         </Box>
       </Container>
     </Box>

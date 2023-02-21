@@ -30,19 +30,19 @@ const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 5
+    items: 3
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 5
+    items: 3
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 5
+    items: 3
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 1
+    items: 2
   }
 }
 
@@ -121,7 +121,7 @@ const Home = () => (
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
+              My Projects
             </Button>
           </NextLink>
         </Box>
@@ -202,7 +202,7 @@ const Home = () => (
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
             />
             <img
-              width="50%"
+              width="60%"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
             />
             <img
@@ -263,14 +263,12 @@ const Home = () => (
 
         <Box align="center" my={4}>
           <NextLink
-            href="https://drive.google.com/file/d/1f8wTm2_UAicf9EZ5vJ4tMVEmUMLiXR2k/view?usp=sharing"
+            href="mailto:gabrielsmangor@gmail.com"
             passHref
             scroll={false}
           >
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              <a href="https://drive.google.com/file/d/1f8wTm2_UAicf9EZ5vJ4tMVEmUMLiXR2k/view?usp=sharing">
-                Download Resume
-              </a>
+              <a href="mailto:gabrielsmangor@gmail.com">Contact me</a>
             </Button>
           </NextLink>
         </Box>

@@ -19,7 +19,8 @@ const Works = () => (
         <Section>
           <WorkGridItem id="COMS" title="Dashboard" thumbnail={thumbComs}>
             Application to monitor and bring different views of business
-            numbers.
+            numbers.<p></p>
+            Based on Horizon UI OpenSurce
           </WorkGridItem>
         </Section>
         <Section>
