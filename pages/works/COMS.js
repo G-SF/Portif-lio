@@ -1,13 +1,11 @@
 import {
   Container,
   Badge,
-  Link,
   List,
   ListItem,
   Heading,
   Center
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
@@ -43,9 +41,9 @@ const Projects = () => (
         <Center>Preview</Center>
       </Heading>
 
-      <WorkImage src="/images/works/portal1.png" alt="COMS" />
-      <WorkImage src="/images/works/portal2.png" alt="COMS" />
-      <WorkImage src="/images/works/portal3.png" alt="COMS" />
+      <WorkImage src="/images/works/Portal1.png" alt="COMS" />
+      <WorkImage src="/images/works/Portal2.png" alt="COMS" />
+      <WorkImage src="/images/works/Portal3.png" alt="COMS" />
     </Container>
   </Layout>
 )
