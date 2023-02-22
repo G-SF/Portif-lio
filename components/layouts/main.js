@@ -18,8 +18,7 @@ const Main = ({ children, router }) => {
         <meta name="description" content="Gabriel SF - homepage" />
         <meta name="author" content="Gabriel SF" />
         <meta name="author" content="Gabriel SF" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/dev.ico" />
         <title>Gabriel SF - Homepage</title>
       </Head>
 
