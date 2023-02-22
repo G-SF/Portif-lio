@@ -64,7 +64,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Gabriel Smangorzewski
           </Heading>
-          <p>2rd year Big Data & AI. PUC-PR College. (Full Stack Developer)</p>
+          <p>2nd year Big Data & AI. PUC-PR College. (Full Stack Developer)</p>
         </Box>
         <Box
           flexShrink={0}
@@ -106,15 +106,15 @@ const Home = () => (
             About me
           </Heading>
           <Paragraph>
-            Hello! 👋 I am Gabriel Smangorzewski Floriano a 2rd year Big Data &
+            Hello! 👋 I am Gabriel Smangorzewski Floriano a 2nd year Big Data &
             Analytic Intelligence undergrad at Pontifícia Universidade Católica
             do Paraná. I Love talking and resolve complexing codes; problems
             involving JavaScript, Python, React, and any other programming
             language. (I Really love this.)
             <br></br>
-            When I'm not coding, you'll find me watching movies, hanging and
-            playing out with my friends. I also love read science and A.I books.
-            (This is my second love.)
+            When I'm not coding, you'll find me watching movies, hanging out and
+            playing out with my friends. I also love reading science and A.I
+            books. (This is my second love.)
           </Paragraph>
         </Box>
         <Box align="center" my={4}>
@@ -136,7 +136,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2004</BioYear>
-          Played my first video game and love it
+          Played my first video game and loved it
         </BioSection>
         <BioSection>
           <BioYear>2006</BioYear>I had my first contact with a computer
