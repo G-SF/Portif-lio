@@ -13,22 +13,22 @@
   "author": "Gabriel SF",
   "license": "MIT",
   "dependencies": {
-    "@chakra-ui/icons": "^1.1.7",
-    "@chakra-ui/react": "^1.8.8",
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
-    "framer-motion": "^6.3.0",
+    "@chakra-ui/icons": "^2.0.17",
+    "@chakra-ui/react": "^2.5.1",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "framer-motion": "^9.1.2",
     "hamburger-react": "^2.5.0",
-    "next": "^12.1.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-multi-carousel": "^2.8.2",
-    "react-pdf": "^5.7.2"
+    "react-pdf": "^6.2.2"
   },
   "devDependencies": {
-    "eslint": "^8.13.0",
-    "eslint-config-next": "^12.1.5",
-    "prettier": "^2.6.2"
+    "eslint": "^8.34.0",
+    "eslint-config-next": "^13.1.6",
+    "prettier": "^2.8.4"
   }
 }
