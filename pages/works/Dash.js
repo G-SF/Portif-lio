@@ -41,9 +41,9 @@ const Projects = () => (
         <Center>Preview</Center>
       </Heading>
 
-      <WorkImage src="/images/works/Portal1.png" alt="Dash" />
-      <WorkImage src="/images/works/Portal2.png" alt="Dash" />
-      <WorkImage src="/images/works/Portal3.png" alt="Dash" />
+      <WorkImage src="/images/works/portal1.png" alt="Dash" />
+      <WorkImage src="/images/works/portal2.png" alt="Dash" />
+      <WorkImage src="/images/works/portal3.png" alt="Dash" />
     </Container>
   </Layout>
 )
