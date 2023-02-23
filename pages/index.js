@@ -16,11 +16,10 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
+import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import ImageNext from 'next/image'
-import Carousel from 'react-multi-carousel'
-import 'react-multi-carousel/lib/styles.css'
 
 const ProfileImage = chakra(ImageNext, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -171,7 +170,6 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           My ⭐ Skills
         </Heading>
-
         <Box
           borderRadius="lg"
           mb={6}
