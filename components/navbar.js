@@ -17,7 +17,8 @@ import {
   IoMailUnreadOutline,
   IoHome,
   IoFolderOpen,
-  IoList
+  IoList,
+  IoClose
 } from 'react-icons/io5'
 import { useState } from 'react'
 
@@ -69,7 +70,7 @@ const Navbar = props => {
           {({ isOpen }) => (
             <>
               <MenuButton isActive={isOpen} as={Button}>
-                {isOpen ? <CloseIcon /> : <IoList />}
+                {isOpen ? <IoClose size={28} /> : <IoList size={28} />}
               </MenuButton>
               <MenuList>
                 <MenuItem>
