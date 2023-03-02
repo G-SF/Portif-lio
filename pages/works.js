@@ -22,43 +22,12 @@ const Works = () => (
         Projects
       </Box>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid>
         <Section>
           <WorkGridItem id="Dash" title="Dashboard" thumbnail={thumbDash}>
             Application to monitor and bring different views of business
             numbers.<p></p>
             Based on Horizon UI OpenSurce
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="Adulting101"
-            title="Adulting101"
-            thumbnail={thumbadulting101}
-          >
-            A CRUD based Django webapp, with a Markdown to HTML Converter and an
-            integrated AI chat bot.
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.1}>
-          <WorkGridItem
-            id="fakeface"
-            title="Fake Face Classifier"
-            thumbnail={thumbFakeFace}
-          >
-            A Machine Learning model using CNN to classify fake images generted
-            using Generative Adversarial Networks (GANs).
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.1}>
-          <WorkGridItem
-            id="handgesture"
-            thumbnail={thumbHandGesture}
-            title="Hand Gesture Recognition"
-          >
-            A machine learning Model that will Recognize Hand Gestures in real
-            time using CNN and automated using Raspberry pi.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
