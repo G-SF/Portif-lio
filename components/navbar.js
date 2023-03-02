@@ -70,7 +70,7 @@ const Navbar = props => {
           {({ isOpen }) => (
             <>
               <MenuButton isActive={isOpen} as={Button}>
-                {isOpen ? <IoClose size={28} /> : <IoList size={28} />}
+                {isOpen ? <IoClose size={20} /> : <IoList size={20} />}
               </MenuButton>
               <MenuList>
                 <MenuItem>
